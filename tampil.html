@@ -1,0 +1,33 @@
+{{ define "Index" }}
+{{ template "header" }}
+<h3>Daftar Transaksi</h3>
+<a href="/tambah" class="btn btn-success left">Tambah Data</a>
+<br><br><br><hr>
+
+<table>
+	<thead>
+		<tr>
+			<td>No Nota</td>
+			<td>Nama Pelanggan</td>
+			<td>Jenis</td>
+			<td>Total Bayar</td>
+			<td>Tindakan</td>
+		</tr>
+	</thead>
+	<tbody>
+	{{ range . }}
+		<tr>
+			<td>{{ .no_nota }}</td>
+			<td>{{ .nama }}</td>
+			<td>{{ .jenis }}</td>
+			<td>{{ .bayar }}</td>
+			<td>
+				<a href="/ubah?id={{ .no_nota }}" class="btn btn-warning">Edit</a>
+				<a href="/hapus?id={{ .no_nota }}" class="btn btn-danger">Hapus</a>
+			</td>
+		</tr>
+	{{ end }}
+	</tbody>
+</table>
+{{ template "footer" }}
+{{ end }}

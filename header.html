@@ -1,0 +1,73 @@
+{{ define "Header" }}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplikasi Jasa Cuci</title>
+	<style type="text/css">
+		*{margin:0; padding: 0; font-family: sans-serif;}
+		a{text-decoration: none; color: inherit;}
+
+		nav{
+			background: #0F1592;
+			color: white;
+		}
+		nav ul{
+			margin-left: 70px;
+		}
+		nav li{
+			list-style: none;
+			display: inline-block;
+			padding: 20px;
+		}
+
+		.container{
+			padding-top: 50px;
+			width: 75%; margin: 0 auto;
+		}
+
+		h3{
+			font-size: 24px;
+		}
+
+		.btn{
+			padding: 10px; color: white;
+			border-radius: 10px;
+		}
+		.btn-success{background: #1A9714 }
+		.btn-warning{background: #D47B1B}
+		.btn-danger{background: #DE1717}
+		.left{float: right;}
+
+		table{
+			margin: 15px auto; width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		td{
+			border: 1px solid grey;
+			text-align: center;
+		}
+		thead td{
+			padding: 10px;
+			background: #3FAEE1;
+		}
+		tbody td{
+			padding: 15px 0;
+		}
+		tbody tr:nth-child(even){
+			background: #F4F4F4;
+		}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li>Aplikasi Jasa Cuci</li>
+			<li>Beranda</li>
+			<li>Transaksi</li>
+			<li>Laporan</li>
+		</ul>
+	</nav>
+
+	<div class="container">
